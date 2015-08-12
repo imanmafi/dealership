@@ -37,4 +37,9 @@ class Vehicle
     age
   end
 
+  def worth_buying?
+    korean_cars = ["Kia", "Hyundai", "Kim Jung Un"]
+    korean_cars.include?(@make) && age < 15
+  end
+
 end
