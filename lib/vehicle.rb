@@ -19,5 +19,17 @@ class Vehicle
     @year
   end
 
-  
+  def save 
+    @@all_vehicles << self
+  end
+
+  define_singleton_method(:all) do
+    @@all_vehicles
+  end
+
+  define_singleton_method(:clear) do
+    @@all_vehicles = []
+  end
+
+
 end

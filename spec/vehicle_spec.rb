@@ -52,4 +52,5 @@ describe(Vehicle) do
       Vehicle.clear()
       expect(Vehicle.all).to(eq([]))
     end
+  end
 end
