@@ -5,6 +5,7 @@ class Vehicle
     @make = make
     @model = model
     @year = year
+    @id = @@all_vehicles.length + 1
   end
 
   def make
@@ -40,6 +41,10 @@ class Vehicle
   def worth_buying?
     korean_cars = ["Kia", "Hyundai", "Kim Jung Un"]
     korean_cars.include?(@make) && age < 15
+  end
+
+  def id
+    @id
   end
 
 end
