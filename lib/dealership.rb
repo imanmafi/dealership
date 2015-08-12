@@ -42,4 +42,8 @@ class Dealership
     found_dealership
   end
 
+  def add_vehicle(vehicle)
+    @cars << vehicle
+  end
+
 end
