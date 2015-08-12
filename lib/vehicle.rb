@@ -19,7 +19,7 @@ class Vehicle
     @year
   end
 
-  def save 
+  def save
     @@all_vehicles << self
   end
 
@@ -31,5 +31,10 @@ class Vehicle
     @@all_vehicles = []
   end
 
+  def age
+    this_year = Time.now.year
+    age = this_year - @year
+    age
+  end
 
 end
