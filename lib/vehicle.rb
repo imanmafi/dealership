@@ -47,4 +47,8 @@ class Vehicle
     @id
   end
 
+  define_singleton_method(:find) do
+    
+  end
+
 end
